@@ -1287,5 +1287,5 @@ body.dark .main-side-project-description-container p{
     color: var(--navbar-font-color-dark-mode)
 }
 body.dark .navbar-link .navbar-link-logo{
-    border: 2px solid box-container-dark-mode;
+    border: 2px solid var(--box-container-dark-mode);
 }
