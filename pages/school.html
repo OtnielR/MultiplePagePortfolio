@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="contact-container">
+        <div class="contact-header">
+            <div class="contact-profile">
+                <img src="../assets/photo-profile.jpg" alt="">
+                <div class="contact-title">
+                    <p class="contact-name">Dennis</p>
+                    <p class="contact-description">Ask any question</p>
+                </div>
+            </div>
+            <div onclick="hideContactElement()" class="contact-close-profile-button">
+                <span class='close-icon'>x</span>
+            </div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-message-content">
+                <div class="contact-message-container contact-message-left">
+                    <div class="contact-message">
+                        <p>Hi i'm Dennis Bot.</p>
+                    </div>
+                    <div class="contact-message">
+                        <p>If you has question for Dennis, you can ask it to me</p>
+                    </div>
+                    <div class="contact-message">
+                        <p>How can i help you today? </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-reply-content">
+                <div class="contact-reply-button">
+                    <button onclick="sayingHelloReply()" type="button">Just Saying Hello!</button>
+                </div>
+                <div class="contact-reply-button">
+                    <button onclick="sayingContactReply()" type="button">How to contact Dennis? </button>
+                </div>
+                <div class="contact-reply-button">
+                    <button onclick="sayingAddressReply()" type="button">Where is Dennis house? </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-container">
+        <nav class="navbar">
+            <div class="navbar-inner">
+                <div class="navbar-links">
+                    <div class="navbar-link ">
+                        <a href="../index.html" class="navbar-link">Home</a>
+                        <div class="navbar-link-logo">
+                            <p>/</p>
+                        </div>
+                    </div>
+                    <div class="navbar-link ">
+                        <a href="about-me.html" class="navbar-link">About</a>
+                    </div>
+                    <div class="navbar-link active">
+                        <a href="school.html" class="navbar-link">School</a>
+                    </div>
+                    <div class="navbar-link">
+                        <a href="project.html" class="navbar-link">Project</a>
+                    </div>
+                    <div class="navbar-link">
+                        <button onclick='toggleContactElement()' class="navbar-link">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <header class=' about-page'>
+        <div class="header-gradient-container">
+
+            <div class="gradient-layer layer-2">
+
+            </div>
+            <div class="gradient-layer layer-3">
+
+            </div>
+        </div>
+        <div class="header-text-container">
+            <h1 class='header-title-container target-point'>
+                My School
+            </h1>
+        </div>
+        <div class="header-profile-container">
+            <div class="header-profile-image-container header-school-image-container">
+                <img src="../assets/logo-smkn-6.png" alt="">
+
+            </div>
+            <div class="header-profile-description">
+                <div class="header-profile-description-title">
+                    <p>SMKN 6 TANGGERANG SELATAN</p>
+                </div>
+                <div class="header-profile-description-text">
+                    <p>
+                        SMK Negeri 6 Kota Tangerang Selatan is a vocational high school that offers two fields of
+                        expertise: Computer and Informatics Technology, as well as Creative Arts and Industry. SMK
+                        Negeri 6 Kota Tangerang Selatan has three expertise programs/majors: Computer and
+                        Telecommunication Network Engineering, Software and Game Development, and Television Program
+                        Production and Broadcasting.
+                    </p>
+                    <br>
+                    <p>
+
+                        SMK Negeri 6 Kota Tangerang Selatan has been established since 2016. The school building is a
+                        three-story structure with a total area of 3,000 m², built on a 4,000 m² plot of land. SMK
+                        Negeri 6 Kota Tangerang Selatan was founded based on the Establishment Decree issued on June 9,
+                        2015, with the number 800/1740.1-Dispend/201.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class='school-departement-section'>
+        <div class='school-departement-section-title'>
+            <p>Konsentrasi Keahlian</p>
+        </div>
+        <div class="school-departement-content">
+            <div class="school-departement-card">
+                <img src="../assets/logo-rpl.png" alt="">
+                <div class="school-departement-card-description">
+                    <p class="school-departement-card-title">Rekayasa Perangkat Lunak</p>
+                    <p class="school-departement-card-subtitle">Pemegroman Perangkat Lunak dan Gim</p>
+                </div>
+            </div>
+            <div class="school-departement-card">
+                <img src="../assets/logo-tkj.png" alt="">
+                <div class="school-departement-card-description">
+                    <p class="school-departement-card-title">Teknik Komputer dan Jaringan</p>
+                    <p class="school-departement-card-subtitle">Teknik Jaringan dan Telekomunikasi</p>
+                </div>
+            </div>
+            <div class="school-departement-card">
+                <img src="../assets/logo-bc.png" alt="">
+                <div class="school-departement-card-description">
+                    <p class="school-departement-card-title">Produksi Siaran dan Program Televisi</p>
+                    <p class="school-departement-card-subtitle">Produksi Siaran dan Program Televisi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class='footer'>
+        <div class="footer-inner">
+            <div class="footer-content">
+                <p>© 2025 Dennis Otniel Rorimpandey.</p>
+            </div>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <p class="footer-link-title">Visit Me</p>
+                    <div class="footer-link">
+                        <a href="">Github</a>
+                        <a href="">CV</a>
+                        <a href="">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <p class="footer-link-title">Contact</p>
+                    <div class="footer-link">
+                        <a href="">Message</a>
+                        <a href="">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="theme-section">
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+    </section>
+    <script src="../script.js">
+
+    </script>
+</body>
+
+</html>

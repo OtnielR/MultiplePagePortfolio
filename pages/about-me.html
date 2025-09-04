@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="contact-container">
+        <div class="contact-header">
+            <div class="contact-profile">
+                <img src="../assets/photo-profile.jpg" alt="">
+                <div class="contact-title">
+                    <p class="contact-name">Dennis</p>
+                    <p class="contact-description">Ask any question</p>
+                </div>
+            </div>
+            <div onclick="hideContactElement()" class="contact-close-profile-button">
+                <span class='close-icon'>x</span>
+            </div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-message-content">
+                <div class="contact-message-container contact-message-left">
+                    <div class="contact-message">
+                        <p>Hi i'm Dennis Bot.</p>
+                    </div>
+                    <div class="contact-message">
+                        <p>If you has question for Dennis, you can ask it to me</p>
+                    </div>
+                    <div class="contact-message">
+                        <p>How can i help you today? </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-reply-content">
+                <div class="contact-reply-button">
+                    <button onclick="sayingHelloReply()" type="button">Just Saying Hello!</button>
+                </div>
+                <div class="contact-reply-button">
+                    <button onclick="sayingContactReply()" type="button">How to contact Dennis? </button>
+                </div>
+                <div class="contact-reply-button">
+                    <button onclick="sayingAddressReply()" type="button">Where is Dennis house? </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-container">
+        <nav class="navbar">
+            <div class="navbar-inner">
+                <div class="navbar-links">
+                    <div class="navbar-link ">
+                        <a href="../index.html" class="navbar-link">Home</a>
+                        <div class="navbar-link-logo">
+                            <p>/</p>
+                        </div>
+                    </div>
+                    <div class="navbar-link active">
+                        <a href="" class="navbar-link">About</a>
+                    </div>
+                    <div class="navbar-link">
+                        <a href="school.html" class="navbar-link">School</a>
+                    </div>
+                    <div class="navbar-link">
+                        <a href="project.html" class="navbar-link">Project</a>
+                    </div>
+                    <div class="navbar-link">
+                        <button onclick='toggleContactElement()' class="navbar-link">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <header class='about-page'>
+        <div class="header-gradient-container">
+
+            <div class="gradient-layer layer-1">
+
+            </div>
+            <div class="gradient-layer layer-3">
+
+            </div>
+        </div>
+        <div class="header-text-container">
+            <h1 class='header-title-container target-point'>
+                I'm Dennis.
+            </h1>
+        </div>
+        <div class="header-profile-container">
+            <div class="header-profile-image-container">
+                <img src="../assets/photo-profile.jpg" alt="">
+            </div>
+            <div class="header-profile-description">
+                <div class="header-profile-description-title">
+                    <p>I'm a Junior Web Developer</p>
+                </div>
+                <div class="header-profile-description-text">
+                    <p>
+
+                        I'm a junior web developer exploring front-end technologies like HTML, CSS, and JavaScript. I
+                        enjoy turning ideas into simple, responsive websites.
+
+                    </p>
+                    <br>
+                    <p>
+
+                        Right now, I’m focused on improving my skills through hands-on projects and contributing to
+                        open-source whenever I can. I’m eager to grow as a developer and build tools that are both
+                        useful and user-friendly.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class='section-content'>
+        <section class='section-carrier-visual'>
+            <div class="carrier-visual-container">
+                <div class="carrier-left-container">
+                    <p class="carrier-visual-title">Certification</p>
+                    <p class="carrier-visual-description">Junior Web Developer</p>
+                </div>
+                <div class="carrier-right-container">
+                    <p class='carrier-visual-time'>17-19</p>
+                </div>
+            </div>
+            <div class="carrier-visual-container">
+                <div class="carrier-left-container">
+                    <p class="carrier-visual-title">Vocational High School</p>
+                    <p class="carrier-visual-description">SMKN 6 Kota Tangerang Selatang</p>
+                </div>
+                <div class="carrier-right-container">
+                    <p class='carrier-visual-time'>16~</p>
+                </div>
+            </div>
+            <div class="carrier-visual-container">
+                <div class="carrier-left-container">
+                    <p class="carrier-visual-title">Junior High School</p>
+                    <p class="carrier-visual-description">SMP Era Informatika</p>
+                </div>
+                <div class="carrier-right-container">
+                    <p class='carrier-visual-time'>13-16</p>
+                </div>
+            </div>
+            <div class="carrier-visual-container">
+                <div class="carrier-left-container">
+                    <p class="carrier-visual-title">Elementary School</p>
+                    <p class="carrier-visual-description">SDN 04 Cilengang</p>
+                </div>
+                <div class="carrier-right-container">
+                    <p class='carrier-visual-time'>7-13</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class='school-departement-section my-friends-section'>
+        <div class='school-departement-section-title' id='my-friends'>
+            <p>My Friends</p>
+        </div>
+        <div class="school-departement-content">
+            <div class="school-departement-card">
+                <img src="../assets/photo-giri.jpg" alt="">
+                <div class="school-departement-card-description">
+                    <p class="school-departement-card-title">Ahmad Giri Saptanu</p>
+                    <p class="school-departement-card-subtitle"></p>
+                </div>
+            </div>
+            <div class="school-departement-card">
+                <img src="../assets/photo-geo.jpg" alt="">
+                <div class="school-departement-card-description">
+                    <p class="school-departement-card-title">Geovanny David W.L</p>
+                    <p class="school-departement-card-subtitle"></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class='footer'>
+        <div class="footer-inner">
+            <div class="footer-content">
+                <p>© 2025 Dennis Otniel Rorimpandey.</p>
+            </div>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <p class="footer-link-title">Visit Me</p>
+                    <div class="footer-link">
+                        <a href="">Github</a>
+                        <a href="">CV</a>
+                        <a href="">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <p class="footer-link-title">Contact</p>
+                    <div class="footer-link">
+                        <a href="">Message</a>
+                        <a href="">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="theme-section">
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-light">
+            <div class="theme-line-image theme-line-image-light">
+                <img src="../assets/sun-svg.svg" alt="">
+            </div>
+            <div class="light-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+        <div class="theme-line-container theme-line-container-dark">
+            <div class="theme-line-image theme-line-image-dark">
+                <img src="../assets/moon-svg.svg" alt="">
+            </div>
+            <div class="dark-mode-line"></div>
+        </div>
+    </section>
+    <script src="../script.js">
+
+    </script>
+</body>
+
+</html>
