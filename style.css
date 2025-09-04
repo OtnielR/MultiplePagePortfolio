@@ -578,7 +578,7 @@ body{
     padding: 1rem 1rem;
     border-radius: .75rem;
     color: var(--navbar-font-color);
-    font-weight: 600;
+    font-weight: 400;
     transition: all .5s ease-in;
 }
 .contact-reply-content{
@@ -1286,5 +1286,6 @@ body.dark .main-project-description-container p,
 body.dark .main-side-project-description-container p{
     color: var(--navbar-font-color-dark-mode)
 }
-
-
+body.dark .navbar-link .navbar-link-logo{
+    border: 2px solid box-container-dark-mode;
+}
