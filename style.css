@@ -770,7 +770,7 @@ body{
 
 .main-side-project img{
     width: 100%;
-    height: 50vh;
+    height: 300px;
     border-radius: .75rem;
     object-fit: cover;
 }
@@ -1287,5 +1287,5 @@ body.dark .main-side-project-description-container p{
     color: var(--navbar-font-color-dark-mode)
 }
 body.dark .navbar-link .navbar-link-logo{
-    border: 2px solid var(--box-container-dark-mode);
+    border: 2px solid var(box-container-dark-mode);
 }
